@@ -1,1 +1,6 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-josefin:"Josefin Sans",sans-serif;
+}
