@@ -1,13 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+
 function Newsletter (){
     return (
         <div className="bg-gray-900 text-white flex flex-col items-center">
             <div className="mt-4">
-                <h5>Subscribe to our email newsletter to receive updates</h5>
+                <p className="text-[12px]">Subscribe to our email newsletter to receive updates</p>
             </div>
             <div>
                 <form action="" className="p-4">
-                    <input type="text" placeholder="Subscribe" className="bg-white text-gray-500" />
-                    <button className="ml-4">Button </button>
+                    <input type="text" placeholder="Subscribe" className="bg-white text-gray-500 w-[300px] h-[40px] placeholder:pl-2" />
+                    <button className="ml-2 bg-yellow-400 h-[40px] w-[40px]"><FontAwesomeIcon icon={faPaperPlane} color='white'/> </button>
                 </form>
             </div>
         </div>

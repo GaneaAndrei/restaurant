@@ -3,11 +3,11 @@ import fries from "../assets/fries.jpg"
 
 function About(){
     return(
-        <div className="p-4">
+        <div className="p-4 mx-6">
             <h1 className="text-center mb-10 text-4xl pt-8 font-josefin">ABOUT US</h1>
             <div>
-                <h3 className="mb-4 font-josefin">LOREM IPSUM DOLOR SIT AMET</h3>
-                <p className="mb-4 text-gray-400">Ut fringilla euismod sagittis. 
+                <h3 className="mb-4 font-josefin font-bold tracking-[4px]">LOREM IPSUM DOLOR SIT AMET</h3>
+                <p className="mb-4 text-gray-400 text-sm">Ut fringilla euismod sagittis. 
                     Cras semper ante sapien, 
                     in ornare nisi euismod eu.
                      Morbi dapibus est non leo vestibulum aliquet. 
@@ -17,7 +17,7 @@ function About(){
                       In pellentesque, lectus at auctor luctus, 
                       lacus nibh dignissim ante, sed maximus arcu odio vitae lectus. 
                 </p>
-                <span className="text-gray-400">
+                <span className="text-gray-400 text-sm">
                 Phasellus vestibulum velit sed nisi ultricies scelerisque. 
                 Vivamus ligula mauris, euismod in dictum id, tempus ac odio. 
                 Etiam tristique felis eros, tincidunt interdum elit gravida et. 
@@ -26,7 +26,7 @@ function About(){
                 </span>
                 
             </div>
-            <button className="mt-4">MORE</button>
+            <button className="mt-4 border-2 border-black border-solid w-26 h-8 text-sm font-bold font-roboto-condensed">MORE</button>
             <div className="flex items-center">
                 <img src={burger}
                 alt="burger" 

@@ -19,7 +19,7 @@ function Header() {
                 </ul>
             </div>
             <div>
-              <button><FontAwesomeIcon icon={faBars} color="white"/></button>
+              <button className="border-2 border-white border-solid w-[40px] h-[40px] rounded-md"><FontAwesomeIcon icon={faBars} color="white"/></button>
             </div>
         </div>
         <div className="flex flex-col justify-center items-center m-auto gap-4 font-mono">
