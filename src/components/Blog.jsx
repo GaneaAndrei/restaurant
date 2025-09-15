@@ -6,7 +6,7 @@ function Blog(){
             <div>
                 <h1 className="text-center mb-8 mt-6 font-josefin font-bold text-4xl tracking-[4px]">OUR BLOG</h1>
             </div>
-            <div className="grid grid-cols-2 place-items-center gap-4">
+            <div className="grid grid-cols-2 place-items-center gap-4 md:flex justify-center">
                 <img src={dessert1} alt="" />
                 <img src={dessert1} alt="" />
                 <img src={dessert1} alt="" />

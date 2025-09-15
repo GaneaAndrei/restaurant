@@ -4,7 +4,8 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
 function Newsletter (){
     return (
         <div className="bg-gray-900 text-white flex flex-col items-center">
-            <div className="mt-4">
+            <div className="md:flex justify-between md:w-1/2 mx-auto items-center">
+            <div className="mt-4 md:mt-0">
                 <p className="text-[12px]">Subscribe to our email newsletter to receive updates</p>
             </div>
             <div>
@@ -13,6 +14,8 @@ function Newsletter (){
                     <button className="ml-2 bg-yellow-400 h-[40px] w-[40px]"><FontAwesomeIcon icon={faPaperPlane} color='white'/> </button>
                 </form>
             </div>
+            </div>
+
         </div>
     )
 }
