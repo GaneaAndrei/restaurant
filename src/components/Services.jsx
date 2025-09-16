@@ -5,9 +5,9 @@ import { faUser } from "@fortawesome/free-solid-svg-icons"
 import { faAsterisk } from "@fortawesome/free-solid-svg-icons"
 function Services(){
     return(
-        <div className="bg-gray-900 p-6">
+        <div id="services" className="bg-gray-900 p-6">
             <div>
-                <h1 className="text-white text-center font-josefin text-4xl pt-8">OUR SERVICES</h1>
+                <h1 className="text-white text-center font-josefin text-4xl pt-8 font-bold">OUR SERVICES</h1>
             </div>
             <div className="flex flex-col items-center gap-3 pt-4 text-white md:flex-row justify-center w-1/2 mx-auto">
                 <div className="group flex flex-col items-center pt-4 ">

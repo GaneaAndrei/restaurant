@@ -13,25 +13,25 @@ function Menu (){
         return item.type===filterFood
     })
     return(
-        <div className="p-4 flex flex-col items-center justify-between">
+        <div id="menu" className="p-4 flex flex-col items-center justify-between">
             <div className="text-black text-4xl mb-4 font-bold font-josefin p-8 tracking-[4px]">
                 <h1>OUR MENU</h1> 
             </div>
             <div className="flex gap-3 mb-8">
                 <button className="border-2 border-solid border-black h-12 w-14 transition-colors duration-300 hover:bg-amber-400 hover:text-white
-                 focus:bg-amber-400 focus:text-white" onClick={() =>setFilterFood('all')}>All</button>
+                 focus:bg-amber-400 focus:text-white cursor-pointer" onClick={() =>setFilterFood('all')}>All</button>
                 <button className="border-2 border-solid border-black h-12 w-22 transition-colors duration-300 hover:bg-amber-400 hover:text-white
-                 focus:bg-amber-400 focus:text-white" onClick={() =>setFilterFood('pasta')} >Pasta</button>
+                 focus:bg-amber-400 focus:text-white cursor-pointer" onClick={() =>setFilterFood('pasta')} >Pasta</button>
                 <button className="border-2 border-solid border-black h-12 w-22 transition-colors duration-300 hover:bg-amber-400 hover:text-white
-                 focus:bg-amber-400 focus:text-white" onClick={() =>setFilterFood('chicken')}>Chicken</button>
+                 focus:bg-amber-400 focus:text-white cursor-pointer" onClick={() =>setFilterFood('chicken')}>Chicken</button>
                 <button className="border-2 border-solid border-black h-12 w-22 transition-colors duration-300 hover:bg-amber-400 hover:text-white
-                 focus:bg-amber-400 focus:text-white" onClick={() =>setFilterFood('drinks')}>Drinks</button>
+                 focus:bg-amber-400 focus:text-white cursor-pointer" onClick={() =>setFilterFood('drinks')}>Drinks</button>
                 <button className="border-2 border-solid border-black h-12 w-22 transition-colors duration-300 hover:bg-amber-400 hover:text-white
-                 focus:bg-amber-400 focus:text-white" onClick={() =>setFilterFood('desserts')}>Desserts</button>
+                 focus:bg-amber-400 focus:text-white cursor-pointer" onClick={() =>setFilterFood('desserts')}>Desserts</button>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4">
                 {filteredFood.map(item =>(
-                    <div key={item.name} className="mb-6 transition-colors duration-300 hover:bg-amber-400 group ">
+                    <div key={item.name} className="mb-6 transition-colors duration-300 hover:bg-amber-400 group cursor-pointer">
                         <img src={item.imgUrl} alt="" className="w-[200px] h-[200px]" />
                         <div className="p-4">
                         <h5 className="font-bold tracking-[6px] font-josefin pt-4">LOREM</h5>

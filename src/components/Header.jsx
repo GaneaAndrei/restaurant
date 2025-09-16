@@ -13,7 +13,8 @@ function Header() {
         
     return (
         <>
-      <div className="bg-[url(./assets/restaurant.jpg)] h-screen bg-cover bg-no-repeat flex flex-col justify-between">
+      <div className="bg-[url(./assets/restaurant.jpg)]  bg-cover bg-no-repeat bg-fixed">
+        <div className="flex flex-col justify-between bg-fixed bg-black/40 h-screen">
         <div className="pt-12 px-4 flex justify-between  mx-auto items-center w-full">
             <div>
                 <ul className="flex gap-2">
@@ -27,13 +28,13 @@ function Header() {
               <button className="border-2 border-white border-solid w-[40px] h-[40px] rounded-md md:hidden" onClick={buttonHandler}><FontAwesomeIcon icon={faBars} color="white"/></button>
 
               <div className="flex justify-between flex-nowrap  text-white font-roboto-condensed gap-2 md:block sm:hidden md:p-0">
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Home</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">About</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Services</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Menu</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Team</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Blog</button>
-                  <button className="transition-border duration-300 ease-in-out border-white/0 hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid">Mail us</button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "> <a href="#">Home</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "> <a href="#about">About</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "> <a href="#services">Services</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "> <a href="#menu">Menu</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "><a href="#team">Team</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "><a href="#blog">Blog</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-12 w-24 focus:border-4 focus:border-white border-solid "><a href="#contact">Mail us</a></button>
               </div>
             </div>
         </div>
@@ -45,17 +46,19 @@ function Header() {
           {isOpen &&(
           <div className=" absolute inset-0 ">
             <ul className="flex flex-col items-center gap-3 text-white bg-gray-800/70">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Menu</a></li>
-              <li><a href="">Team</a></li>
-              <li><a href="">Blog</a></li>
-              <li><a href="">Mail us</a></li>
+            <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "> <a href="#">Home</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "> <a href="#about">About</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "> <a href="#services">Services</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "> <a href="#menu">Menu</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "><a href="#team">Team</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "><a href="#blog">Blog</a></button>
+                  <button className="transition-border duration-300 ease-in-out border-white hover:border-4 hover:border-white hover:border-solid h-10 w-full focus:border-4 focus:border-white border-solid "><a href="#contact">Mail us</a></button>
             </ul>
           </div>
           )}
         </div>
+        </div>
+
 
       </div>
         </>

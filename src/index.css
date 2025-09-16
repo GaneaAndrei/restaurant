@@ -6,3 +6,6 @@
     --font-josefin:"Josefin Sans",sans-serif;
     --font-roboto-condensed:"Roboto Condensed",sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
